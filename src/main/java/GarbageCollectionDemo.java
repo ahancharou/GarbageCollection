@@ -23,14 +23,14 @@ public class GarbageCollectionDemo {
     * -Xms4m -Xmx16m -Xmn2m -XX:PermSize=12m -XX:MaxPermSize=18m -XX:+UseG1GC
     * */
 
-    public static void main (String [] args) {
+    public static void main (String [] args) throws InterruptedException {
 
         Scanner sc = new Scanner(System.in);
         sc.next();
         Random random = new Random();
-        List list;
+        List list ;
         while (true){
-            list = new ArrayList(random.nextInt(1000));
+            list = new ArrayList(random.nextInt(10000));
         }
     }
 }
