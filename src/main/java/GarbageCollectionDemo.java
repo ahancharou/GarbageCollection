@@ -28,13 +28,9 @@ public class GarbageCollectionDemo {
         Scanner sc = new Scanner(System.in);
         sc.next();
         Random random = new Random();
-        List<String[]> list = new ArrayList<String[]>();
+        List list;
         while (true){
-            String[] mass = new String[random.nextInt(100)];
-            for (int j  =0; j<mass.length; j++){
-                mass[j] = new String(""+(j+random.nextInt(10)));
-            }
-            list.add(mass);
+            list = new ArrayList(random.nextInt(1000));
         }
     }
 }
